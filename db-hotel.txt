@@ -38,8 +38,10 @@ Ricerca Database
      Driver License
   
  8. Quanti paganti sono anche ospiti?
-
+     
+     SELECT * FROM `paganti` WHERE `ospite_id` IS NOT NULL ;
 
  9. Quanti posti letto ha l’hotel in totale?
+
      SELECT SUM(`beds`) FROM `stanze` 
       SUM(`beds`) TOT - 33
